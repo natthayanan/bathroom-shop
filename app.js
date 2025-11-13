@@ -11,6 +11,7 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 
+
 // ตะกร้าแบบง่าย
 const cart = [];
 const cartList = document.getElementById('cartList');
