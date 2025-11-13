@@ -1,1 +1,49 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bathroom Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Firebase SDK (ไว้เชื่อมตอนหลัง) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <header class="wrap">
+    <h1>🛁 Bathroom Shop</h1>
+    <p>อุปกรณ์ห้องน้ำคุณภาพ</p>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>สินค้าแนะนำ</h2>
+      <button class="add-btn" data-name="ฝักบัวแรงดัน" data-price="890">เพิ่ม ฝักบัวแรงดัน (฿890)</button>
+      <button class="add-btn" data-name="ก๊อกน้ำสแตนเลส" data-price="650">เพิ่ม ก๊อกน้ำสแตนเลส (฿650)</button>
+      <button class="add-btn" data-name="ชั้นวางในห้องน้ำ" data-price="420">เพิ่ม ชั้นวางในห้องน้ำ (฿420)</button>
+    </section>
+
+    <section>
+      <h2>ฟอร์มสั่งซื้อ</h2>
+      <form id="orderForm" class="form">
+        <label>ชื่อ-นามสกุล <input name="customerName" required></label>
+        <label>เบอร์ติดต่อ <input name="phone" required></label>
+        <label>ที่อยู่จัดส่ง <textarea name="address" rows="3" required></textarea></label>
+
+        <div class="cart">
+          <h3>ตะกร้าสินค้า</h3>
+          <ul id="cartList"></ul>
+          <p><b>รวม:</b> <span id="grandTotal">0</span> บาท</p>
+        </div>
+
+        <button class="primary" type="submit">ส่งคำสั่งซื้อ</button>
+        <p id="status" class="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="wrap"><small>เดโมเพื่อการศึกษา</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
 
