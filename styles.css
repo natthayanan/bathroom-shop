@@ -1,1 +1,10 @@
+*{box-sizing:border-box} body{font-family:system-ui,sans-serif;margin:0;color:#111}
+.wrap{max-width:960px;margin:auto;padding:16px}
+header{background:#f6f7fb;text-align:center}
+.form{display:grid;gap:12px}
+input,textarea{padding:10px;border:1px solid #ddd;border-radius:8px}
+.primary{padding:10px 14px;border:0;border-radius:8px;background:#0ea5e9;color:#fff;cursor:pointer}
+.add-btn{margin:4px 8px 8px 0;padding:8px 12px;border:0;border-radius:8px;background:#eee;cursor:pointer}
+.cart{border:1px dashed #ccc;padding:12px;border-radius:8px;background:#fafafa}
+.status{min-height:20px}
 
