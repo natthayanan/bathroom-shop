@@ -1,11 +1,15 @@
-// ใส่ config จริงหลังสร้าง Firebase (ตอนนี้ยังเป็น placeholder)
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
+  apiKey: "AIzaSyB5Tlu6CL4GoZMelvTFO7KbXo-HuWBOcT0",
+  authDomain: "bathroom-shop.firebaseapp.com",
+  projectId: "bathroom-shop",
+  storageBucket: "bathroom-shop.firebasestorage.app",
+  messagingSenderId: "659916563845",
+  appId: "1:659916563845:web:7640e732f7a5fb29e790ec",
+  measurementId: "G-4D7ZV2NTRV"
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
+
 
 // ตะกร้าแบบง่าย
 const cart = [];
